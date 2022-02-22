@@ -10,11 +10,11 @@ int main()
     printf("[A] Domestic Usage\n[B] Bulk meter\n\n");
     printf("Insert your user type: ");
     scanf(" %c", &userType);
-    printf("\nInsert your water unit usage amount: ");
-    scanf("%d", &waterUsage);
 
     if (userType == 'A')
     {
+        printf("\nInsert your water unit usage amount: ");
+        scanf("%d", &waterUsage);
         if (waterUsage <= 100)
         {
             waterBill = waterUsage * 0.1;
@@ -45,6 +45,8 @@ int main()
     }
     else if (userType == 'B')
     {
+        printf("\nInsert your water unit usage amount: ");
+        scanf("%d", &waterUsage);
         if (waterUsage < 100)
         {
             waterBill = waterUsage * 0.4;
@@ -71,5 +73,9 @@ int main()
         {
             printf("Your water bill is = RM%.2f", waterBill);
         }
+    }
+    else
+    {
+        printf("Invalid");
     }
 }
