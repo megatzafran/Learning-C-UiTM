@@ -38,6 +38,7 @@ int main()
         else if (roomView == 1)
         {
             totalPrice = numberTicket * 90;
+            totalPriceGst = totalPrice * 0.1;
             printf("Total Price = %.2f\n", totalPrice);
             printf("Total price with gst = %.2f\n", totalPriceGst);
         }
@@ -61,12 +62,14 @@ int main()
         if (roomView == 0)
         {
             totalPrice = numberTicket * 110;
+            totalPriceGst = totalPrice * 0.1;
             printf("Total Price = %.2f\n", totalPrice);
             printf("Total price with gst = %.2f\n", totalPriceGst);
         }
         else if (roomView == 1)
         {
             totalPrice = numberTicket * 130;
+            totalPriceGst = totalPrice * 0.1;
             printf("Total Price = %.2f\n", totalPrice);
             printf("Total price with gst = %.2f\n", totalPriceGst);
         }
@@ -89,12 +92,14 @@ int main()
         if (roomView == 0)
         {
             totalPrice = numberTicket * 180;
+            totalPriceGst = totalPrice * 0.1;
             printf("Total Price = %.2f\n", totalPrice);
             printf("Total price with gst = %.2f\n", totalPriceGst);
         }
         else if (roomView == 1)
         {
             totalPrice = numberTicket * 200;
+            totalPriceGst = totalPrice * 0.1;
             printf("Total Price = %.2f\n", totalPrice);
             printf("Total price with gst = %.2f\n", totalPriceGst);
         }
