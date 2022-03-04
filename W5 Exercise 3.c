@@ -43,7 +43,7 @@ int main()
     }
     default:
     {
-        operationStop = 0;
+        printf("Invalid");
         break;
     }
     }
@@ -70,7 +70,7 @@ int main()
     }
     default:
     {
-        operationStop = 0;
+        printf("Invalid");
         break;
     }
     }
@@ -97,7 +97,7 @@ int main()
     }
     default:
     {
-        operationStop = 0;
+        printf("Invalid");
         break;
     }
     }
@@ -124,7 +124,7 @@ int main()
     }
     default:
     {
-        operationStop = 0;
+        printf("Invalid");
         break;
     }
     }
@@ -151,7 +151,7 @@ int main()
     }
     default:
     {
-        operationStop = 0;
+        printf("Invalid");
         break;
     }
     }
@@ -178,7 +178,7 @@ int main()
     }
     default:
     {
-        operationStop = 0;
+        printf("Invalid");
         break;
     }
     }
@@ -205,7 +205,7 @@ int main()
     }
     default:
     {
-        operationStop = 0;
+        printf("Invalid");
         break;
     }
     }

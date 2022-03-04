@@ -47,7 +47,7 @@ int main()
     {
         printf("\nInsert your water unit usage amount: ");
         scanf("%d", &waterUsage);
-        if (waterUsage < 100)
+        if (waterUsage <= 100)
         {
             waterBill = waterUsage * 0.4;
         }
