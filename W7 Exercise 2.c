@@ -22,10 +22,10 @@ int main()
     if (shift > 3)
     {
         totalSalary += 1000;
-        printf("%.2f", totalSalary);
+        printf("Salary is %.2f", totalSalary);
     }
     else
     {
-        printf("%.2f", totalSalary);
+        printf("Salary is %.2f", totalSalary);
     }
 }
