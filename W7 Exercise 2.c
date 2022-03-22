@@ -4,20 +4,18 @@ int main()
 {
     float salary;
     int shift;
-    int counter = 0;
     float totalSalary = 0;
-
-    printf("How many shifts ?: ");
-    scanf("%d", &shift);
 
     do
     {
         printf("Please enter salary: ");
         scanf("%f", &salary);
         totalSalary += salary;
-        counter++;
 
-    } while (counter < shift);
+    } while (salary <= 0);
+
+    printf("Please enter shift: ");
+    scanf("%d", &shift);
 
     if (shift > 3)
     {
