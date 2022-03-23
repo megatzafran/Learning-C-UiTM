@@ -9,7 +9,7 @@ int main()
     while (meters < 11)
     {
         inches = meters * 39.37;
-        printf("%d\t%f\n", meters, inches);
+        printf("%d\t%.2f\n", meters, inches);
         meters++;
     }
 }
