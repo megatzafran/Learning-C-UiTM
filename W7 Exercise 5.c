@@ -42,7 +42,7 @@ int main()
 
             cycle++;
         }
-        printf("\fPrice after discount is:\n");
+        printf("\nPrice after discount is:\n");
         printf("S : %.2f\n", discountPriceS);
         printf("C : %.2f\n", discountPriceC);
         printf("M : %.2f\n", discountPriceM);
