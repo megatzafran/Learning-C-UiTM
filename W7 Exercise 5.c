@@ -1,47 +1,63 @@
 #include <stdio.h>
-#define YES 'y'
 
 int main()
 {
 
-    char keepContinue = 'y', cycle = 1;
+    char whichOption;
+    char wantContinue = 't';
     float product;
     float priceS, priceC, priceM;
     float discountPriceS, discountPriceC, discountPriceM;
 
-    while (keepContinue == 'y')
-    {
-        printf("\nProduct Type\tDiscount Rate\n");
-        printf("[S]\t\t0.3\n");
-        printf("[C]\t\t0.1\n");
-        printf("[M]\t\t0.4\n");
+    printf("Product Type\tDiscount Rate\n");
+    printf("[S]\t\t0.3\n");
+    printf("[C]\t\t0.1\n");
+    printf("[M]\t\t0.4\n");
 
-        if (cycle == 1)
+    while (wantContinue == 't')
+    {
+        printf("\nWhich option are you choosing?\n");
+        scanf(" %c", &whichOption);
+
+        if (whichOption == 'S')
         {
-            printf("\nWhat is the price of product S: ", product);
+            printf("\nWhat is the price of product S: ");
             scanf("%f", &priceS);
 
             discountPriceS = priceS - (priceS * 0.3);
+            printf("Price after discount is %.2f\n", discountPriceS);
         }
-        else if (cycle == 2)
+        else if (whichOption == 'C')
         {
-            printf("\nWhat is the price of product C: ", product);
+            printf("\nWhat is the price of product C: ");
             scanf("%f", &priceC);
 
             discountPriceC = priceC - (priceC * 0.1);
+            printf("Price after discount is %.2f\n", discountPriceC);
         }
-        else
+        else if (whichOption == 'M')
         {
-            printf("\nWhat is the price of product M: ", product);
+            printf("\nWhat is the price of product M: ");
             scanf("%f", &priceM);
 
             discountPriceM = priceM - (priceM * 0.4);
+            printf("Price after discount is %.2f\n", discountPriceM);
+        }
+        else
+        {
+            printf("\nInvalid product type\n");
         }
 
-        cycle++;
+        printf("\nDo you still want to continue (y/n)\n");
+        scanf(" %c", &wantContinue);
+
+        if (wantContinue == 'y')
+        {
+            wantContinue = 't';
+        }
+        else
+        {
+            wantContinue = 'f';
+        }
     }
-    printf("\nPrice after discount is:\n");
-    printf("S : %.2f\n", discountPriceS);
-    printf("C : %.2f\n", discountPriceC);
-    printf("M : %.2f\n", discountPriceM);
 }
