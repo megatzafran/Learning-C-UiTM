@@ -27,7 +27,7 @@ int main()
         else if (waterUsage >= 201)
         {
 
-            waterBill = (waterUsage - 200) * 0.03 + (100 * 0.1) + (200 * 0.05);
+            waterBill = (waterUsage - 200) * 0.03 + (100 * 0.1) + (100 * 0.05);
         }
         else
         {
@@ -58,7 +58,7 @@ int main()
         else if (waterUsage >= 201)
         {
 
-            waterBill = (waterUsage - 200) * 0.1 + (100 * 0.4) + (200 * 0.3);
+            waterBill = (waterUsage - 200) * 0.1 + (100 * 0.4) + (100 * 0.3);
         }
         else
         {
