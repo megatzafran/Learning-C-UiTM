@@ -10,9 +10,9 @@ int main()
     float discountPriceS, discountPriceC, discountPriceM;
 
     printf("Product Type\tDiscount Rate\n");
-    printf(" [S]\t\t0.3\n");
-    printf(" [C]\t\t0.1\n");
-    printf(" [M]\t\t0.4\n");
+    printf("[S]\t\t0.3\n");
+    printf("[C]\t\t0.1\n");
+    printf("[M]\t\t0.4\n");
 
     while (wantContinue == 't')
     {
