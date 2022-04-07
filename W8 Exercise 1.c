@@ -2,15 +2,21 @@
 
 int main()
 {
-    float salary[4], kwsp;
-    int i;
-
-    for (i = 0; i < 4; i++)
+    int i, numbers[5], temp; // temp is considered as temporary
+    for (i = 0; i < 5; i++)
     {
-        printf("Insert salary for employee %d: ", i + 1);
-        scanf("%f", &salary[i]);
-        kwsp = salary[i] * 0.1;
-
-        printf("Total deduction for employee %d : %.2f\n\n", i + 1, kwsp);
+        printf("Insert number %d: ", i + 1);
+        scanf("%d", &numbers[i]);
     }
+
+    for (i = 0; i < 5; i++)
+    {
+        temp = -9999;
+        if (temp < numbers[i])
+        {
+            temp = numbers[i];
+        }
+    }
+
+    printf("\nThe highest number is %d", temp);
 }

@@ -2,21 +2,15 @@
 
 int main()
 {
-    int i, numbers[5], temp;
-    for (i = 0; i < 5; i++)
-    {
-        printf("Insert number %d: ", i + 1);
-        scanf("%d", &numbers[i]);
-    }
+    int i;
+    float price[5], totalPrice;
 
     for (i = 0; i < 5; i++)
     {
-        temp = -9999;
-        if (temp < numbers[i])
-        {
-            temp = numbers[i];
-        }
-    }
+        printf("\nInput price: ");
+        scanf("%f", &price[i]);
 
-    printf("\nThe highest number is %d", temp);
+        totalPrice = price[i] + 0.06 * price[i];
+        printf("Price after tax item %d: %.2f\n", i + 1, totalPrice);
+    }
 }
