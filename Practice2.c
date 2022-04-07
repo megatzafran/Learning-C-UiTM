@@ -15,9 +15,9 @@ int main()
 
     for (i = 0; i < 3; i++)
     {
-        printf("\n%.2f", price[i]);
+        printf("\nRM%.1f", price[i]);
         totalPrice += price[i];
-        }
+    }
 
     printf("\n\nTotal price : %.2f", totalPrice);
 }
