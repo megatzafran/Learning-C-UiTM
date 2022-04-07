@@ -2,7 +2,7 @@
 
 int main()
 {
-    int i, numbers[5], temp; // temp is considered as temporary
+    int i, numbers[5], max = -9999;
     for (i = 0; i < 5; i++)
     {
         printf("Insert number %d: ", i + 1);
@@ -11,12 +11,11 @@ int main()
 
     for (i = 0; i < 5; i++)
     {
-        temp = -9999;
-        if (temp < numbers[i])
+        if (max < numbers[i])
         {
-            temp = numbers[i];
+            max = numbers[i];
         }
     }
 
-    printf("\nThe highest number is %d", temp);
+    printf("\nThe highest number is %d", max);
 }
