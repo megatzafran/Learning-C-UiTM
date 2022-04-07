@@ -2,29 +2,29 @@
 
 int main()
 {
-    int numArr[5];
-    int oddArr[3];
-    int i;
+    int i, fail = 0, marks[5];
 
     for (i = 0; i < 5; i++)
     {
-        printf("Enter a value : ");
-        scanf("%d", &numArr[i]);
+        printf("Enter mark Student %d:", i + 1);
+        scanf("%d", &marks[i]);
     }
 
-    printf("\nAll number");
     for (i = 0; i < 5; i++)
     {
-        printf("\n\t%d", numArr[i]);
-    }
-
-    printf("\nOdd number\n");
-    for (i = 0; i < 5; i++)
-    {
-        if (numArr[i] % 2 != 0)
+        if (marks[i] < 50)
         {
-            oddArr[i] = numArr[i];
-            printf("\t%d\n", oddArr[i]);
+            fail++;
+        }
+    }
+    printf("\nNumber of Failed Student : %d Failure", fail);
+    for (i = 0; i < 5; i++)
+    {
+
+        if (marks[i] < 50)
+        {
+
+            printf("\nStudent %d", i + 1);
         }
     }
 }

@@ -2,11 +2,22 @@
 
 int main()
 {
-    int score[3] = {90, 88, 78};
+    float price[3], totalPrice;
     int i;
 
-    for (i = 2; i >= 0; i--)
+    for (i = 0; i < 3; i++)
     {
-        printf("Element %d : %d\n", i + 1, score[i]);
+        printf("Enter a value: ");
+        scanf("%f", &price[i]);
     }
+
+    printf("\nList of price");
+
+    for (i = 0; i < 3; i++)
+    {
+        printf("\n%.2f", price[i]);
+        totalPrice += price[i];
+        }
+
+    printf("\n\nTotal price : %.2f", totalPrice);
 }

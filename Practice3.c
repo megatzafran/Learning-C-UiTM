@@ -2,22 +2,29 @@
 
 int main()
 {
-    float price[3], totalPrice;
+    int numArr[5];
+    int oddArr[3];
     int i;
 
-    for (i = 0; i < 3; i++)
+    for (i = 0; i < 5; i++)
     {
-        printf("Enter a value: ");
-        scanf("%f", &price[i]);
+        printf("Enter a value : ");
+        scanf("%d", &numArr[i]);
     }
 
-    printf("\nList of price");
-
-    for (i = 0; i < 3; i++)
+    printf("\nAll number");
+    for (i = 0; i < 5; i++)
     {
-        printf("\n%.2f", price[i]);
-        totalPrice += price[i];
-        }
+        printf("\n\t%d", numArr[i]);
+    }
 
-    printf("\n\nTotal price : %.2f", totalPrice);
+    printf("\nOdd number\n");
+    for (i = 0; i < 5; i++)
+    {
+        if (numArr[i] % 2 != 0)
+        {
+            oddArr[i] = numArr[i];
+            printf("\t%d\n", oddArr[i]);
+        }
+    }
 }
