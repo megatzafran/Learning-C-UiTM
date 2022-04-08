@@ -3,7 +3,7 @@
 int main()
 {
     int numArr[5];
-    int oddArr[3];
+    int oddArr[5];
     int i;
 
     for (i = 0; i < 5; i++)
