@@ -18,7 +18,7 @@ int main()
         }
     }
     printf("\nNumber of Failed Student : %d", fail);
-    printf("\nFailure\n");
+    printf("\nFailure");
 
     for (i = 0; i < 5; i++)
     {
